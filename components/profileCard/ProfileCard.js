@@ -7,20 +7,19 @@ const ProfileCard = () => {
     'flex-column',
     'justify-content-center',
     'align-items-center',
-    'profileCard',
   ];
-
-  const titleClasses = ['mx-3', 'my-3', 'title'];
+  const imageClasses = ['img-fluid', 'rounded-circle', styles.picture];
+  const descriptionClasses = ['mx-2', styles.descriptionWrapper];
 
   return (
     <div className={componentClasses.join(' ')}>
       <img
         src="./images/profile-picture.jpeg"
         alt="Profile picture"
-        className={styles.picture}
+        className={imageClasses.join(' ')}
       />
-      <h1 className={titleClasses.join(' ')}>Edgar. Frontend Developer.</h1>
-      <div className={styles.descriptionWrapper}>
+      <h1 className="mx-2 my-2">Edgar. Frontend Developer.</h1>
+      <div className={descriptionClasses.join(' ')}>
         <ReactTypingEffect
           className={styles.description}
           text={
