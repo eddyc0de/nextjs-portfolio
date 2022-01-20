@@ -3,10 +3,10 @@ import { Fragment } from 'react';
 import Layout from '../components/layout/Layout';
 import Hero from '../components/hero/Hero';
 import Stack from '../components/stack/Stack';
-import Projects from '../components/projects/Projects'; 
-import Contact from '../components/contact/Contact'; 
+import Projects from '../components/projects/Projects';
+import Contact from '../components/contact/Contact';
 
-export default function Home() {
+const Home = () => {
   return (
     <Fragment>
       <Head>
@@ -24,4 +24,6 @@ export default function Home() {
       </Layout>
     </Fragment>
   );
-}
+};
+
+export default Home;

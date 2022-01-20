@@ -1,0 +1,17 @@
+.picture {
+  border: 6px solid #fff;
+  border-radius: 50%;
+  width: 30%;
+}
+
+.title {
+  font-size: 100%;
+}
+
+.description {
+  font-size: 1.5rem;
+}
+
+.descriptionWrapper {
+  min-height: 220px;
+}

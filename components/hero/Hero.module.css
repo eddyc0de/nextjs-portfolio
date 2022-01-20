@@ -1,4 +1,16 @@
 .hero {
+  width: 100%;
   height: calc(100vh - 6.25rem);
   background-color: #222831;
+}
+
+.container-fluid {
+  height: 100vh;
+}
+
+.heroImage {
+  background-image: url('/images/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: calc(100vh - 6.25rem);
 }

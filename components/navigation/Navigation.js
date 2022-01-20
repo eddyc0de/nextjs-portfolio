@@ -2,10 +2,10 @@ import styles from './Navigation.module.css';
 
 const Navigation = () => {
   return (
-    <nav className={styles.navigation}>
+    <nav id="nav" className={styles.navigation}>
       <ul>
         <li>
-          <a href="#home">Home</a>
+          <a href="#hero">Home</a>
         </li>
         <li>
           <a href="#stack">Stack</a>
