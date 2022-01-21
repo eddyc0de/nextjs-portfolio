@@ -4,13 +4,12 @@ import ProfileCard from '../profileCard/ProfileCard';
 
 const Hero = () => {
   return (
-    <section id="hero" className={styles.hero}>
-      <Container fluid className="vh-100">
-        <Row className="vh-100">
-          <Col xs="12" md="6" className="align-self-center">
+    <section id="hero" className={`d-flex align-items-center ${styles.hero}`}>
+      <Container fluid className="z-index3">
+        <Row>
+          <Col className={styles.heroImage}>
             <ProfileCard />
           </Col>
-          <Col xs="12" md="6" className={styles.heroImage}></Col>
         </Row>
       </Container>
     </section>
