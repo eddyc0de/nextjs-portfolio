@@ -1,5 +1,6 @@
 import styles from './ProfileCard.module.css';
 import ReactTypingEffect from 'react-typing-effect';
+import { Button } from 'react-bootstrap';
 
 const ProfileCard = () => {
   const componentClasses = [
@@ -9,7 +10,7 @@ const ProfileCard = () => {
     'align-items-center',
   ];
   const imageClasses = ['img-fluid', 'rounded-circle', styles.picture];
-  const descriptionClasses = ['mx-2', styles.descriptionWrapper];
+  const descriptionClasses = ['mx-3', styles.descriptionWrapper];
 
   return (
     <div className={componentClasses.join(' ')}>
@@ -18,7 +19,7 @@ const ProfileCard = () => {
         alt="Profile picture"
         className={imageClasses.join(' ')}
       />
-      <h1 className="mx-2 my-2">Edgar. Frontend Developer.</h1>
+      <h1 className="mx-3 my-3">Edgar. Frontend Developer.</h1>
       <div className={descriptionClasses.join(' ')}>
         <ReactTypingEffect
           className={styles.description}
@@ -27,10 +28,13 @@ const ProfileCard = () => {
           }
           speed={40}
           eraseSpeed={20}
-          eraseDelay={5000}
-          typingDelay={1000}
+          eraseDelay={8000}
+          typingDelay={1500}
         />
       </div>
+      <a href="#contact">
+        <Button className="btn btn-primary">Get in touch!</Button>
+      </a>
     </div>
   );
 };
